@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+
+<title>Fibonacci Calculator</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+</head>
+
+  <body class="d-flex">
+  
+    <div class="display-8">
+  
+      <div class="container-sm">
+  
+        <p class="header" id="header">Fibonacci Calculator</p>
+        
+          <div class="hstack gap-3">
+            
+              <div class="fibof">The Fibonacci Of</div>
+
+              <input type="number" min="1" class="anynumber" id="anynumber" placeholder="#">
+
+              <button type="button" class="btn btn-primary" id="button">Is</button>
+
+              <div class="ms-3 spinner-border d-none" role="status" id="spinner1"></div>
+              
+              <strong class="fibresult" id="result"></strong>
+
+              <div class="d-none position-relative" id="error42">Server Error: 42 is the meaning of life</div>
+
+            </div>
+
+            <div class="d-none position-relative" class="alert alert-danger" role="alert" id="error50">Can't be larger than 50</div>
+            
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onchange = calcFiboServer()>
+                Save Calculation
+              </label>
+            </div>
+
+            <table class="results-block">
+              <tr>
+                <td class="prev-results d-none" id="prev-results">Results</td>
+                <td class="ms-5 spinner-border d-none" role="status" id="spinner2"></td>
+              </tr>
+            </table> 
+
+              <div class="table-results d-none" id="table-results"></div>
+
+        </div>
+
+    </div>
+    
+    
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+</body>
+</html>
