@@ -17,8 +17,7 @@ const
 
   checkBox = document.querySelector("input[type=checkbox]"),
 
-  dropDown = document.getElementById("dropdown"),
-  dropDownButton = document.getElementById("dropdown-button");
+  dropDown = document.getElementById("toolbar");
 
   let remoteCalculation = false; // false - local, true - remote
 
@@ -117,7 +116,7 @@ async function calcFiboServer() {
       tableResults.innerHTML +=
         `<tr class="results-row">
         <th>The Fibonacci </th>
-        <th data-field="number"> Of <b class="number">${data.results[i].number} </b></th> 
+        <th data-field="number" class="number"> Of <b>${data.results[i].number} </b></th> 
         <th> is <b>${data.results[i].result}</b></th>
         <th data-field="date" class="date"> Calculated at: ${new Date(data.results[i].createdDate)}</th>
       </tr>`;
@@ -143,31 +142,31 @@ async function calcFiboServer() {
 };
 
 
-var $table = $('#table')
-var $sort = $('#sort')
+var $table = document.getElementById("table");
+var $sort = document.getElementById("sort");
 
-$(function() {
+function sortBy() {
   $sort.change(function() {
     var field = ''
     var sortOrder = ''
 
-      if (this.value == 'number_asc') {
-        field = 'number'
-        sortOrder = 'asc'
-      } else if (this.value == 'number_desc') {
-        field = 'number'
-        sortOrder = 'desc'
-      } else if (this.value == 'date_asc') {
-        field = 'date'
-        sortOrder = 'asc'
-      } else if (this.value == 'date_asc') {
-        field = 'date'
-        sortOrder = 'desc'
+      if (this.value == "number_asc") {
+        field = "number"
+        sortOrder = "asc"
+      } else if (this.value == "number_desc") {
+        field = "number"
+        sortOrder = "desc"
+      } else if (this.value == "date_asc") {
+        field = "date"
+        sortOrder = "asc"
+      } else if (this.value == "date_desc") {
+        field = "date"
+        sortOrder = "desc"
       } 
 
-      $table.tableResults('sortBy', {
+      $table.bootstrapTable("sortBy", {
         field: field,
         sortOrder: sortOrder
       })
     })
-  })
+  }
