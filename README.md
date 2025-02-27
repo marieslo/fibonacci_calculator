@@ -25,3 +25,43 @@ The Fibonacci Calculator is a web-based tool designed to calculate the Fibonacci
 - **Remote Fibonacci Calculation**: Fetches the Fibonacci result from a remote server API and updates the UI accordingly.
 - **Error Handling**: Displays appropriate error messages if the input is invalid or if the server is down.
 - **Sorting**: Provides the ability to sort the results in ascending or descending order based on the number or date.
+
+<img width="300" alt="Fibonacci" src="https://github.com/user-attachments/assets/3aef7dcb-ef54-48ba-9c8b-e67048923764" />
+
+
+## Project Setup
+
+- Client side:
+Clone or download *this* repository.
+Open `index.html` in your browser to see the calculator in action.
+
+- Server side ([MIT](https://choosealicense.com/licenses/mit/)):
+
+```bash
+> git clone https://github.com/israeltechchallenge/fibonacci-server
+```
+
+Then enter to the created folder
+
+```bash
+> cd fibonacci-server
+```
+
+Install the required dependencies with npm (make sure you have [Node.js](https://nodejs.org/) installed, npm comes with that)
+
+```bash
+> npm install
+```
+
+Then you can run the server
+
+```bash
+> node app.js
+```
+
+You should see something like this:
+
+```bash
+App listening on port 5050
+Press Ctrl+C to quit.
+```
