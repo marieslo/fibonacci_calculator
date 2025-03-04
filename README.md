@@ -26,8 +26,7 @@ The Fibonacci Calculator is a web-based tool designed to calculate the Fibonacci
 - **Error Handling**: Displays appropriate error messages if the input is invalid or if the server is down.
 - **Sorting**: Provides the ability to sort the results in ascending or descending order based on the number or date.
 
-<img width="300" alt="Fibonacci" src="https://github.com/user-attachments/assets/3aef7dcb-ef54-48ba-9c8b-e67048923764" />
-
+<img width="400" alt="fibonacci" src="https://github.com/user-attachments/assets/dfea64a7-c9c8-47d1-ad51-d8001cdec73a" />
 
 ## Project Setup
 
@@ -36,6 +35,7 @@ Clone or download *this* repository.
 Open `index.html` in your browser to see the calculator in action.
 
 - Server side ([MIT](https://choosealicense.com/licenses/mit/)):
+
 
 ```bash
 > git clone https://github.com/israeltechchallenge/fibonacci-server
